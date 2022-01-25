@@ -1,3 +1,7 @@
+# Filename tehtava5.py
+# Author: Jenna Laaksovirta
+# Description: Calculate average of students grades.
+
 def calc_average(students):
     values = students.values()
     average = sum(values) / len(students)
