@@ -1,0 +1,22 @@
+ask user input
+
+if user input is bigger or equal to 108 and smaller or equal to 120
+    print "Grade 5"
+
+else if user input is bigger or equal to 96 and smaller to 108
+    print "Grade 4"
+
+else if user input is bigger or equal to 84 and smaller to 96
+    print "Grade 3"
+
+else if user input is bigger or equal to 72 and smaller to 84
+    print "Grade 2"
+
+else if user input is bigger or equal to 60 and smaller to 72
+    print "Grade 1"
+
+else if user input is smaller to 60 and bigger or equal to 0
+    print "Grade 0"
+
+else 
+    print "Give number that is bigger than 0 and smaller than 120"

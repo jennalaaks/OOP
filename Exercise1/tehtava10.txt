@@ -1,0 +1,22 @@
+10
+a) Proseduraalinen ohjelmointi (Procedural programming) perustuu ohjelman suorittamiseen joka 
+jäsennetään jakamalla aliohjelmiin.
+
+b) Funktionaalinen ohjelmointi (Functional programmin) perustuu matemaattisten funktioiden käyttöön.
+Puhtaasti funktionaalisissa ohjelmissa ei ole lainkaan tilaa eikä sijoituslausetta tai silmukoita, 
+eli muuttujaan ei voida sijoittaa uutta arvoa. Isot tietomäärät käsitellään rekrusion avulla.
+
+c) Olio-ohjelmointi (Object oriented programming) perustuu tapaan jossa ratkaisut jäsennetään olioiden yhteistoimintana.
+Oliot sisältävät niiden oman sisäisen tilan ja julkisen rajapinnan.
+
+d) Luokka (Class) olio-ohjelmointikielessä perustyökalu tai rakennuspalikka. Luokka määrittelee joukon ominaisuuksia ja menetelmiä
+jotka yhdistävät kaikki saman tyyppiset oliot.
+
+e) Objekti (Object) voi olla muuttuja, tietorakenne, funktio tai menetelmä. Olio-ohjelmoinnissa objekti voi olla muuttujien, funktioiden
+ja tietorakenteiden yhdistelmä.
+
+f) Instanssi (Instance) on esiintymä tai ilmentymä joka tarkoittaa olio-ohjelmoinnissa luokan edustajaa.
+Yhdestä luokasta voidaan tehdä useampia muunneltuja esiintymiä.
+
+g) Kapselointi (Encapsulation) Olio-ohjelmointikielessä se viittaa tietojen niputtamiseen ja kyseisiä tietoja. Monet ohjelmointikielet
+käyttävät kapselointia usein luokkien muodossa.

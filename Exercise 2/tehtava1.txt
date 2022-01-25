@@ -1,0 +1,11 @@
+1. Explain the following terms:
+    a. Pseudocode
+        Pseudocode is like programming language, but only tells prgorams structure. It helps programmer
+        to code a program.
+    b. Algorithm
+        Algorithm is how a process is run and solves problems.
+    c. Data attribute
+        Data-attribute is a single value, witch tells data point or data value. 
+        The attributes can be like name, age, height and other descriptors.
+    d. Method
+        Method is a function, witch action focused on object.
