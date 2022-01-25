@@ -1,0 +1,50 @@
+create function calculate_average and import student_list
+    average = sum of student_list / student_list length
+    return average
+
+create dictonaries_studentlist
+
+for loop wich loop 5 times
+    user input name
+    add name in studentlist
+
+    user input points
+    add points in studentlist
+
+create variable and save average from call function calculate_average(studentlist)
+print("Average is: ", average)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create function witch calculate average and add gradelist in attribute
+    calculate average to gradelist sum / gradelist length
+    return average
+
+
+create namelist
+create gradelist
+
+for loop asks five times student name and Grade
+    user input name
+    save input in namelist
+
+    user input grade
+    save input in gradelist
+
+save average to unction and call calculate function(gradelist)
+print average
