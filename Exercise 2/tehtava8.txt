@@ -1,0 +1,22 @@
+# Filename tehtava8.py
+# Author: Jenna Laaksovirta
+# Description: Alarm clock description
+
+Data-attributes:
+    1. hours
+    2. minutes
+    3. seconds
+    4. alarm
+    5. armed
+
+There are restrictions on the time, so there cannot be 300 seconds.
+
+Methods:
+    getTime()
+    setTime()
+    setAlarm()
+    arm()
+    ring_alarm()
+    tick()
+    alarm()
+functios is private except arm()

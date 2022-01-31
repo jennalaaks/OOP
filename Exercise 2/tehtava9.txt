@@ -1,0 +1,43 @@
+# Filename tehtava9.py
+# Author: Jenna Laaksovirta
+# Description: Alarm clock pseudocode
+
+create Clock object
+    add clock id
+    initialize Clock object and add attributes:
+        hours
+        minutes
+        seconds
+        alarmtime (list)
+        armed
+
+    function which get the time (hours, minutes, seconds)
+        return time in a string
+
+    function set a time(hours, minutes, seconds)
+        set hours
+        set minutes
+        set seconds
+
+    function set alarm(hours, minutes, seconds)
+        set alarm time (list)
+
+    function arm which turn alarm on or off
+        alarm opposite
+
+    functon which ring the alarm
+        print the alarm text
+
+    function tick
+        add one second in the clock time
+
+    
+create alarm clock which use the clock class
+
+call function set a time(hours, minutes, seconds)
+
+call function arm which turn clock on
+
+while true which is endless loop
+    print the time
+    call function tick
