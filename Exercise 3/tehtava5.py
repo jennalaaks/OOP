@@ -1,3 +1,7 @@
+# Filename      tehtava5.py
+# Author:       Jenna Laaksovirta
+# Description:   Toss the dice and get color and extra feature.
+
 import random
 
 class Dice:
@@ -72,10 +76,14 @@ class Dice:
 def main():
     my_dice = Dice()
 
-    print('Rolling the first dice...')
+    my_dice.set_toss_the_dice()
+    print('Rolling the dice...')
     print('The dice number:', my_dice.get_toss_the_dice())
     
+    my_dice.set_color()
     print('The dice coloris:', my_dice.get_color())
+
+    my_dice.set_feature()
     print('The Dice feature is:', my_dice.get_feature())
     
 
