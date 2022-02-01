@@ -17,13 +17,13 @@ class Coin:
     
         if coin == 0:
             self.__sideup = 'Heads'
-        if coin == 1:
+        elif coin == 1:
             self.__sideup = 'Tails'
-        if coin == 2:
+        elif coin == 2:
             self.__sideup = 'Coin lands on the table upright and not flat showing heads or tails.'
-        if coin == 3:
+        elif coin == 3:
             self.__sideup = 'Coin drops on the ground and disappears on a rabbit hole.'
-        if coin == 4:
+        else:
             self.__sideup = 'Coin defies gravity and gets lost on a wormhole in space.'
 
     def get_sideup(self):
