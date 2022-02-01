@@ -1,0 +1,48 @@
+import random
+
+function game
+    variable round number = 0
+    print Round number
+
+    while loop true
+        # set dices numbers
+        dice = [call player1 set dice number,
+                call player2 set dice number,
+                call player3 set dice number]
+
+        # get dices numbers
+        list = [player1 get dice number, 
+                player2 get dice number, 
+                player3 get dice number]
+
+        print "Player name": dices point
+        print "Player name": dices point
+        print "Player name": dices point
+
+        print Name has smallest dice number
+
+        list[smallest element] remove
+
+        if list lenght is 1
+            false
+
+        print Round number
+        Round number add 1
+
+        print Winner is (list[index 0])
+
+dice object (self, player)
+    dice number
+    player
+
+    function wich set randomize dice number
+
+    function wich get the dice number
+
+main function
+    variable player1 = dice object("name")
+    variable player2 = dice object("name")
+    variable player3 = dice object("name")
+
+    call function game
+
