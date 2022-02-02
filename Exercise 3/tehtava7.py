@@ -1,6 +1,6 @@
 # Filename      tehtava7.py
 # Author:       Jenna Laaksovirta
-# Description:
+# Description:  3 dice game where one player leaves each round.
    
 import random
 
@@ -21,9 +21,9 @@ class Dice:
     def __gt__(self, other):
         return self.get_toss_the_dice() > other.get_toss_the_dice()
 
-def poistaPaskin(players):
-    print( 'Kierroksen huonoin pelaaja: ', min(players).get_name() )
-    return [player for player in players if player != min(players)] # Käy läpi players-listan ja koostaa uuden listan. kts. List comprehension
+def removePlayer(players):
+    print( f'{min(players).get_name()} has a small number of dice.')
+    return [player for player in players if player != min(players)] # Go through the players list and compile a new list. (List comprehension)
 
 def main():
 
@@ -32,11 +32,11 @@ def main():
     while len(players) > 1:
         for player in players:
             player.set_toss_the_dice()
-            print(f"{player.get_name()} nopan luku on: {player.get_toss_the_dice()}")
+            print(f"{player.get_name()} dice number is {player.get_toss_the_dice()}")
             
-        players = poistaPaskin(players)
+        players = removePlayer(players)
         print("")
 
-    print(f"Voittaja on {players[0].get_name()}!")
+    print(f"Winner is {players[0].get_name()}!")
 
 main()

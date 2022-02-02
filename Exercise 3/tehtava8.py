@@ -1,6 +1,7 @@
 # Filename      tehtava7.py
 # Author:       Jenna Laaksovirta
-# Description:
+# Description:  3 dice game where one player leaves each round. 
+#               if there is a draw, the color of the dice will decide.
    
 import random
 
@@ -21,17 +22,17 @@ class Dice:
 
     def get_color(self):
         if self.__color == 1:
-            return 'Green'
+            return 'green'
         elif self.__color == 2:
-            return 'Yellow'
+            return 'yellow'
         elif self.__color == 3:
-            return 'Red'
+            return 'red'
         elif self.__color == 4:
-            return 'Blue'
+            return 'blue'
         elif self.__color == 5:
-            return 'Brown'
+            return 'brown'
         else:
-            return 'Purple'
+            return 'purple'
 
     def __gt__(self, other):
         if self.get_toss_the_dice() == other.get_toss_the_dice():
@@ -39,9 +40,9 @@ class Dice:
         else:
             return self.get_toss_the_dice() > other.get_toss_the_dice()
 
-def poistaPaskin(players):
-    print( 'Kierroksen huonoin pelaaja:', min(players).get_name() )
-    return [player for player in players if player != min(players)] # Käy läpi players-listan ja koostaa uuden listan. kts. List comprehension
+def removePlayer(players):
+    print( f'{min(players).get_name()} has a small number of dice.')
+    return [player for player in players if player != min(players)] # Go through the players list and compile a new list. (List comprehension)
 
 def main():
 
@@ -50,11 +51,11 @@ def main():
     while len(players) > 1:
         for player in players:
             player.set_toss_the_dice()
-            print(f"{player.get_name()} nopan luku on {player.get_toss_the_dice()} ja väri {player.get_color()}")
+            print(f"{player.get_name()} dice number is {player.get_toss_the_dice()} and the dice color is {player.get_color()}")
             
-        players = poistaPaskin(players)
+        players = removePlayer(players)
         print("")
 
-    print(f"Voittaja on {players[0].get_name()}!")
+    print(f"Winner is {players[0].get_name()}!")
 
 main()

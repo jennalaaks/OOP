@@ -1,48 +1,31 @@
-import random
+Object dice
+    parameter sideup
+    parameter name
 
-function game
-    variable round number = 0
-    print Round number
+    function set_toss_the_dice
+        return random number to dice parameter sideup
 
-    while loop true
-        # set dices numbers
-        dice = [call player1 set dice number,
-                call player2 set dice number,
-                call player3 set dice number]
+    function get_toss_the_dice
+        return dice sideup
 
-        # get dices numbers
-        list = [player1 get dice number, 
-                player2 get dice number, 
-                player3 get dice number]
+    function get_name
+        return dice name
 
-        print "Player name": dices point
-        print "Player name": dices point
-        print "Player name": dices point
+    function gt
+        tells what to do when comparing two values
 
-        print Name has smallest dice number
+function removePlayer
+    print "Worst player of the round:" and get_name to the player with the lowest dice value.
+    retrun new list where is remove the player with the lowest dice value.
 
-        list[smallest element] remove
+functiona main
+    list players where is player name and dice value
 
-        if list lenght is 1
-            false
+    while loop
+        for loop player in players
+            player call function set_toss_the_dice
+            print player name and dice number is get_toss_the_dice
 
-        print Round number
-        Round number add 1
-
-        print Winner is (list[index 0])
-
-dice object (self, player)
-    dice number
-    player
-
-    function wich set randomize dice number
-
-    function wich get the dice number
-
-main function
-    variable player1 = dice object("name")
-    variable player2 = dice object("name")
-    variable player3 = dice object("name")
-
-    call function game
-
+    players list = removePlayer function
+    
+    print "Winner is " players list index 0
