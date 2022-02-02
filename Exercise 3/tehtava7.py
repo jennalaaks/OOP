@@ -32,7 +32,7 @@ def main():
     while len(players) > 1:
         for player in players:
             player.set_toss_the_dice()
-            print(f"{player.get_name()} dice number is {player.get_toss_the_dice()}")
+            print( f"{player.get_name()} dice number is {player.get_toss_the_dice()}" )
             
         players = removePlayer(players)
         print("")

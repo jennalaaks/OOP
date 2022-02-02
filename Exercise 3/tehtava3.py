@@ -36,7 +36,6 @@ class Coin:
     def get_currency(self):
         return self.__currency
 
-
 def main():
 
     my_coin = Coin()
@@ -50,6 +49,5 @@ def main():
     print('Currency (original):', my_coin.get_currency())
     my_coin.currency()
     print('Currency (new):', my_coin.get_currency())
-
 
 main()

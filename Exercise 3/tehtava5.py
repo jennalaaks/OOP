@@ -11,22 +11,7 @@ class Dice:
         self.__color = "white"
 
     def set_toss_the_dice(self):
-        rand = random.randint(0, 5)
-        
-        if rand == 0:
-            self.__sideup = 1
-        elif rand == 1:
-            self.__sideup = 2
-        elif rand == 2:
-            self.__sideup = 3
-        elif rand == 3:
-            self.__sideup = 3
-        elif rand == 4:
-            self.__sideup = 4
-        elif rand == 5:
-            self.__sideup = 5
-        else:
-            self.__sideup = 6
+        return self.__sideup
         
     def get_toss_the_dice(self):
         return self.__sideup
@@ -85,7 +70,6 @@ def main():
 
     my_dice.set_feature()
     print('The Dice feature is:', my_dice.get_feature())
-    
 
 main()
     

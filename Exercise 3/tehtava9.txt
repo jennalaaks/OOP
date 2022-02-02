@@ -1,0 +1,37 @@
+class CellPhone
+   declate the oject parameters(__init__)
+        parameter manufact
+        parameter model
+        parameter retail_price
+
+    function set_manufact(userInput)
+        cellpone manufact = userInput
+
+    function set_model(userInput)
+        cellpone model = userInput
+
+    function set_retail price = userInput
+        cellpone retail_price = userInput
+
+    function get_manufact
+        return cellpone manufact
+
+    function get_model
+        reutrn cellpone model
+
+    function get_retail price
+        reutrn cellpone retail_price
+
+function main
+    get user input "Enter the cellpone manufact: " set_manufact(userInput)
+
+    get user input "Enter the cellpone model: " set_model(userInput)
+
+    get user input "Enter the cellpone retail price: " set_retail_price(userInput)
+
+    print "Here is the data that you provided:"
+    print "Manufacturer:" cellphone get_manufact
+    print "Model number:" cellphone get_model
+    print "Retail price:" cellphone get_retail
+
+call main function   

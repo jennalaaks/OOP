@@ -36,7 +36,6 @@ class Coin:
     def get_currency(self):
         return self.__currency
 
-
 def main():
 
     my_coin = Coin()
