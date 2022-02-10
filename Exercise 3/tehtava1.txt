@@ -1,0 +1,24 @@
+Explain the following terms:
+a. Abstraction (in programming)
+    Abstraction is used to hide background details or any unnecessary implementation 
+    about the data so that users only see the required information. 
+    It is one of the most important and essential features of object-oriented programming. 
+    Pre-defined functions are similar to data abstraction.
+
+b. Accessor and mutator methods
+        Accessor Method: This method is used to access the state of the object i.e, the data hidden in the object can be accessed from this method.
+        Mutator Method: This method is used to mutate/modify the state of an object i.e, it alters the hidden value of the data variable.
+
+c. Public and private methods
+    Private methods are those methods that should neither be accessed outside the class nor by any base class. 
+    In Python, there is no existence of Private methods that cannot be accessed except inside a class. However, 
+    to define a private method prefix the member name with double underscore “__”
+
+    Public members (generally methods declared in a class) are accessible from outside the class. The object of the same class is required to invoke a public method. 
+    All members in a Python class are public by default. Any member can be accessed from outside the class environment.
+
+
+d. __str__ method (in Python)
+    The __str__ method in Python represents the class objects as a string – it can be used for classes. 
+    The __str__ method should be defined in a way that is easy to read and outputs all the members of the class. 
+    This method is also used as a debugging tool when the members of a class need to be checked.
