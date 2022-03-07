@@ -48,7 +48,7 @@ class Mammal:
         return self.__diet
 
     def __str__(self):
-        return (f"id: {self.__id}, species: {self.__species}, size: {self.__size}, weight: {self.__weight} noise: {self.__noise} diet: {self.__diet}")
+        return (f"\nid: {self.__id},\nspecies: {self.__species},\nsize: {self.__size},\nweight: {self.__weight}\nnoise: {self.__noise},\ndiet: {self.__diet}")
 
 class DomesticAnimal(Mammal):
     def __init__(self, species, size, weight, noise, diet, id, owner, name):
@@ -69,7 +69,7 @@ class DomesticAnimal(Mammal):
         return self.__owner
 
     def __str__(self):
-        return (f"{Mammal.__str__(self)} name: {self.__name} owner: {self.__owner}")
+        return (f"{Mammal.__str__(self)},\nname: {self.__name}\nowner: {self.__owner}")
 
 class WildAnimal(Mammal):
     def __init__(self, species, size, weight, noise, diet, id, habitat, endangered):
@@ -90,9 +90,9 @@ class WildAnimal(Mammal):
         return self.__endangered
 
     def __str__(self):
-        return (f"{Mammal.__str__(self)} habitat: {self.__habitat} is endangered: {self.__endangered}")
+        return (f"{Mammal.__str__(self)}\habitat: {self.__habitat}\nis endangered: {self.__endangered}")
 
-def main():
+if __name__=="__main__":
     dog = DomesticAnimal('dog', 40, 56, 'Hau!', 'meat', 0, 'Maija Meikäläinen', 'Rekku')
     cat = DomesticAnimal('cat', 35, 4, 'MIAU!', 'fish', 1, 'Karolina Mäkinen', 'Rambo')
     ostrich = WildAnimal('ostrich', 210, 98, 'Kakaa', 'plants', 2, 'Africa', 'no')
@@ -100,4 +100,3 @@ def main():
 
     for i in animals:
         print(i)
-main()

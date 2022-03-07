@@ -1,4 +1,4 @@
-# Filename      tehtava6.py
+# Filename      tehtava7.py
 # Author:       Jenna Laaksovirta
 # Description:  Create a class person and two chlid classes which are student and teacher.
 
