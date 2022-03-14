@@ -1,0 +1,53 @@
+Tehtävä 1
+    a) Polymorphism is the method in an object-oriented programming language that performs different 
+    things as per the object’s class, which calls it. With Polymorphism, a message is sent to multiple 
+    class objects, and every object responds appropriately according to the properties of the class. 
+
+        class Tomato(): 
+            def type(self): 
+            print("Vegetable") 
+            def color(self):
+            print("Red") 
+        class Apple(): 
+            def type(self): 
+            print("Fruit") 
+            def color(self): 
+            print("Red") 
+            
+        def func(obj): 
+            obj.type() 
+            obj.color()
+                
+        obj_tomato = Tomato() 
+        obj_apple = Apple() 
+        func(obj_tomato) 
+        func(obj_apple)
+
+    b) A class variable is an important part of object-oriented programming (OOP) that defines a specific 
+    attribute or property for a class and may be referred to as a member variable or static member variable.
+    
+        class Espresso:
+            menu_type = "Drink"
+
+        espresso_order = Espresso()
+        print(espresso_order.menu_type)
+
+    c) Python instance variables are owned by an instance of a class. The value of an instance variable can be different 
+    depending on the instance with which the variable is associated. This means that the value of each instance variable can be. 
+    This is unlike a class variable where the variable can only have one value that you assign. Instance variables are declared 
+    inside a class method.
+
+        class CoffeeOrder:
+	        def __init__(self, coffee_name, price):
+		    self.coffee_name = coffee_name
+		    self.price = price
+
+        customer_order = CoffeeOrder("Espresso", 2.10)
+        print(customer_order.coffee_name)
+        print(customer_order.price)
+
+    d) A sequence diagram is a type of interaction diagram because it describes how—and in what order—a group of objects works together. 
+    These diagrams are used by software developers and business professionals to understand requirements for a new system or to document an existing process.
+
+    e) In UML diagrams, such as sequence or communication diagrams, lifelines represent the objects that participate in an interaction. For example, in a banking 
+    scenario, lifelines can represent objects such as a bank system or customer. Each instance in an interaction is represented by a lifeline.

@@ -1,0 +1,18 @@
+Tehtävä 2
+    a)
+        a) (1.) In an inheritance relationship, the superclass is the general class.
+        b) (4.) In an inheritance relationship, the subclass is the specialized class.
+        c) 2. SavingsAccount
+        d) 1. The instance operator
+        e) 2. Sequence diagram
+        f) 4. Composite structure diagram
+        g) 1. Multiplication operation
+
+    b)  a) False
+        b) False
+        c) True
+        d) True
+        e) False
+        f) True
+        g) False
+
